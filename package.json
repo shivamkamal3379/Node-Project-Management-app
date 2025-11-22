@@ -1,0 +1,22 @@
+{
+  "name": "backendproj",
+  "version": "1.0.0",
+  "description": "A project management app for beginners ",
+  "main": "index.js",
+  "type" : "module",
+
+
+  "scripts": {
+    "dev": " node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamkamal3379/Node-Project-Management-app.git"
+  },
+  "author": "Shivam Kamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivamkamal3379/Node-Project-Management-app/issues"
+  },
+  "homepage": "https://github.com/shivamkamal3379/Node-Project-Management-app#readme"
+}
