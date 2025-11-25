@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shivamkamal3379/Node-Project-Management-app/issues"
   },
-  "homepage": "https://github.com/shivamkamal3379/Node-Project-Management-app#readme"
+  "homepage": "https://github.com/shivamkamal3379/Node-Project-Management-app#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
