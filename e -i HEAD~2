@@ -1,0 +1,26 @@
+[33md69536e4a4c953635867b7249f5af13d71ee3450[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Used Nodemailer For the Mail Sending Still structure designed and Error handling Done
+[33m734f508ddbb703698167eac18198ff1e64814eeb[m Mailgen Used for the structure of the mails sending for reset and verification
+[33mf359898d65d337c08779308358d35f4729455a40[m Hashing Done using Crypto
+[33m92d4196b0db38eb5d8f9201469d0001a9e9ddc4a[m Initialized JWT Tokens
+[33maf8cfad0fb63864b248be35f4a4270d697ced1f8[m Mongoose Hashing Done And Comparing
+[33md5019307391b513f2c480da99099f668dc0f21dc[m Setting Prehooks
+[33m85ae00fb7af7cc792a91678df93a628c8877c782[m Done
+[33md92c585f6c32ebde93258cf51a0b5a60810a7263[m User Models Doen Mongoose
+[33mf66180a8578031fe161efd9eca4c40540ea3de3d[m Merge branch 'main' of https://github.com/shivamkamal3379/Node-Project-Management-app
+[33mb4cf00c8741709ffd6091349ec844ca11521b2fb[m Async Handler sorted
+[33md60848549aae95c57e1ab6c45f2b810af31762be[m Add Product Requirements Document for Project Camp Backend
+[33m2ed8b21a0f21baf6427c8ca74cce098ea49f5680[m Health Check Routes With Postman Testing Done
+[33me6081aae33cec0dfb1bcac0b3ed5e9045c39f40a[m DB User Sorted
+[33macf0934e06332a6f681e1bf8db117542700d4a76[m Mongo DB Config
+[33mf7bc1bccd6474aa5482ca23a611c2e1258617e27[m nodemon scriptws adjusted
+[33m51dbb88f0744ec332624c070d0999a6f2f16be8e[m Made some constants for the Project
+[33mc3eb8662425602ff9acdadef9f3ad9406df1c6e6[m structured changed of project
+[33md91eccf398d7790e770d9e8debdc7edfcb37aca2[m Api errors configured
+[33m632e0da48c4b8154639117052560af906486f1b7[m CORS and DT ENV set up
+[33m669793d412e6a600cfb64773c57b559502064f8d[m dot env structure done
+[33m6541f62e9cc164051b85f109f428720f33bd0ab7[m done
+[33m8d2ea69f3a7952c5be78595d6ba6d278ff9cc114[m Packages done
+[33ma7c432ffbd971524380f96fd665f31664377ec95[m add prettier and git to codbase
+[33m5af98c70c0eb38545b26dba264a4e1ef3cb99645[m Prettier initialized
+[33m939eef9c10ee0ab8ec499cc70b65486bcb83da40[m Backend Proj initiated
+[33m375744ce61ed241a93c41c75d1c914bbc54f47e4[m Mark down File Done
