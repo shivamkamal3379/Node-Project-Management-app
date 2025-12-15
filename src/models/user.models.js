@@ -60,14 +60,15 @@ const userSchema = new Schema(
   },
   {
     timestamps: true,
-  },
+  }
 );
 
-userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) return next();
+// ✅ FIXED: Removed 'next' parameter and calls.
+// Since this is an async function, Mongoose waits for the promise to resolve automatically.
+userSchema.pre("save", async function () {
+  if (!this.isModified("password")) return;
 
   this.password = await bcrypt.hash(this.password, 10);
-  next();
 });
 
 userSchema.methods.isPasswordCorrect = async function (password) {
@@ -82,7 +83,7 @@ userSchema.methods.generateAccessToken = function () {
       username: this.username,
     },
     process.env.ACCESS_TOKEN_SECRET,
-    { expiresIn: process.env.ACCESS_TOKEN_EXPIRY },
+    { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
   );
 };
 
@@ -92,20 +93,20 @@ userSchema.methods.generateRefreshToken = function () {
       _id: this._id,
     },
     process.env.REFRESH_TOKEN_SECRET,
-    { expiresIn: process.env.REFRESH_TOKEN_EXPIRY },
+    { expiresIn: process.env.REFRESH_TOKEN_EXPIRY }
   );
 };
 
 userSchema.methods.generateTemporaryToken = function () {
-    const unHashedToken = crypto.randomBytes(20).toString("hex")
+  const unHashedToken = crypto.randomBytes(20).toString("hex");
 
-    const hashedToken = crypto
-        .createHash("sha256")
-        .update(unHashedToken)
-        .digest("hex")
+  const hashedToken = crypto
+    .createHash("sha256")
+    .update(unHashedToken)
+    .digest("hex");
 
-    const tokenExpiry = Date.now() + (20*60*1000) //20 mins
-    return {unHashedToken, hashedToken, tokenExpiry}
+  const tokenExpiry = Date.now() + 20 * 60 * 1000; // 20 mins
+  return { unHashedToken, hashedToken, tokenExpiry };
 };
 
 export const User = mongoose.model("User", userSchema);
