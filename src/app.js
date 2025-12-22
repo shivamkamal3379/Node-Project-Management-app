@@ -27,7 +27,7 @@ app.use("/api/v1/healthcheck" , healthCheckRouter );
 app.use("/api/v1/auth" , authRouter );
 
 
-app.get ("/" ,  (req, res) => {
+app.get ("/" ,  (req, res) => { 
     res.send("welcome to testing of basecampy");
 
 
